@@ -128,7 +128,7 @@
 %\useoutertheme{default}
 %\useoutertheme{infolines}
 %\useoutertheme{miniframes}
-%\useoutertheme{smoothbars}
+\useoutertheme{smoothbars}
 %\useoutertheme{sidebar}
 %\useoutertheme{split}
 %\useoutertheme{shadow}
@@ -182,6 +182,150 @@
 %----------------------------------------------------------------------------------------
 %	PRESENTATION BODY SLIDES
 %----------------------------------------------------------------------------------------
+
+\section{Introducción}
+
+%------------------------------------------------
+
+\subsection[]{Motivación}
+
+%------------------------------------------------
+
+\subsection[]{Objetivos}
+
+\begin{frame}
+	\frametitle{Objetivos}
+
+	Desarrollo de un \textbf{servicio web} similar a Cauldron, que permita el análisis de ecosistemas de desarrollo de \emph{software}, modificando algunos de sus principios básicos.
+
+	\bigskip % Vertical whitespace
+
+	Subobjetivos:
+
+	\begin{itemize}
+		\item Desarrollar un sistema que genere informes inalterables
+		\item Desarrollar múltiples componentes \emph{software} independientes que colaboren entre ellos para dar un servicio al usuario
+		\item Simplificar el uso de GrimoireLab mediante la ejecución de su contenedor Docker original
+		\item Realizar varias mejoras menores respecto a Cauldron
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Desarrollo del Proyecto}
+
+%------------------------------------------------
+
+\subsection[]{Trabajo previo}
+
+\begin{frame}
+	\frametitle{Trabajo previo}
+
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\begin{column}{0.45\textwidth} % Left column width
+			\textbf{Cauldron.io}
+			\begin{itemize}
+				\item Facilitar el uso de GrimoireLab
+				\item Django + Elasticsearch
+				\item Git, GitHub, Meetup, etc
+				\item Informes alterables
+				\item Sistema de \emph{workers}
+				\item Métricas y gráficas
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.55\textwidth} % Right column width
+			\begin{figure}
+				\includegraphics[width=\linewidth]{cauldron_tools.pdf}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Trabajo previo}
+
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\begin{column}{0.45\textwidth} % Left column width
+			\textbf{Cauldron.io (Puntos de mejora)}
+			\begin{itemize}
+				\item Múltiples iteraciones en los modelos
+				\item \emph{Cauldron Pool Scheduler}
+				\item Manejo de gran cantidad de datos
+				\item Difícil modificación de gráficas
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.55\textwidth} % Right column width
+			\begin{figure}
+				\includegraphics[width=\linewidth]{cauldron_improvements.pdf}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+%------------------------------------------------
+
+\subsection[]{Arquitectura del software}
+
+%------------------------------------------------
+
+\section{Ejemplo de uso}
+
+\begin{frame}
+	\centering \Huge \color{beamer@blendedblue}
+	\textbf{Ejemplo de uso}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Conclusiones y trabajos futuros}
+
+%------------------------------------------------
+
+\subsection[]{Conclusiones}
+
+\begin{frame}
+	\frametitle{Conclusiones}
+
+	\begin{itemize}
+		\item Sistema de análisis para repositorios \emph{software}
+		\item Componentes independientes
+		\item Simplificación del uso de GrimoireLab
+		\item \alert{No logrado}: mejorar las prestaciones de Cauldron
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\subsection[]{Líneas de desarrollo futuras}
+
+\begin{frame}
+	\frametitle{Líneas de desarrollo futuras}
+
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\begin{column}{0.45\textwidth} % Left column width
+			\textbf{Trabajos futuros}
+			\begin{itemize}
+				\item Sistema de colas
+				\item Creación de usuarios
+				\item Plataformas Cloud
+				\item Interfaz de usuario
+				\item CI / CD
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth} % Right column width
+			\textbf{Código utilizado}
+			\begin{itemize}
+				\item \url{github.com/merinhunter/grimoirebots}
+				\item \url{github.com/merinhunter/grimoirebots-client}
+				\item \url{github.com/merinhunter/grimoirebots-deployment}
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+%------------------------------------------------
 
 \section{Text Examples} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
 
@@ -466,7 +610,7 @@
 
 		\bigskip\bigskip % Vertical whitespace
 
-		{\LARGE Questions? Comments?}
+		{\LARGE ¿Alguna pregunta?}
 	\end{center}
 \end{frame}
 
